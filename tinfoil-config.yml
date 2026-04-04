@@ -1,0 +1,18 @@
+cvm-version: 0.7.3
+memory: 65536
+cpus: 8
+gpus: 1
+
+containers:
+  - name: "auditor-agent"
+    image: "ghcr.io/royrin/auditor-in-a-tee:v0.0.1"
+    runtime: nvidia
+    gpus: all
+    secrets:
+      - HF_TOKEN
+
+shim:
+  upstream-port: 8080
+  paths:
+    - /health
+    - /ui
