@@ -1,18 +1,15 @@
 cvm-version: 0.7.3
-memory: 65536
-cpus: 8
-gpus: 1
+memory: 16384
+cpus: 4
 
 containers:
   - name: "auditor-agent"
-    image: "ghcr.io/royrin/auditor-in-a-tee:v0.0.1"
-    runtime: nvidia
-    gpus: all
+    image: "ghcr.io/royrin/auditor-in-a-tee:main"
     secrets:
-      - HF_TOKEN
+      - TINFOIL_API_KEY
 
 shim:
   upstream-port: 8080
   paths:
     - /health
-    - /ui
+    - /plan
