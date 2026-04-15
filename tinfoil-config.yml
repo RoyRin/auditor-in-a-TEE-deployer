@@ -4,7 +4,7 @@ cpus: 4
 
 containers:
   - name: "auditor-agent"
-    image: "ghcr.io/royrin/auditor-in-a-tee:v0.0.4@sha256:d7e0b1f1aa2991fa1861652ff7eb3352fdb680f7ffa5a485cf751b787703543c"
+    image: "ghcr.io/royrin/auditor-in-a-tee:v0.0.5@sha256:254f434c2e607196a3d8e67d59f5df81e323ec6a460c59dbd65e6192e2db4282"
     secrets:
       - TINFOIL_API_KEY
 
