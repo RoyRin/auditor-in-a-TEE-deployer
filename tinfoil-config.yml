@@ -14,6 +14,7 @@ shim:
     - /health
     - /plan
     - /plans
+    - /plans/reset
     - /plan/*
     - /plan/*/sign
     - /plan/*/data
