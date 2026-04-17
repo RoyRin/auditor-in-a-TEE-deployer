@@ -13,6 +13,7 @@ shim:
   paths:
     - /health
     - /plan
+    - /plans
     - /plan/*
     - /plan/*/sign
     - /plan/*/data
