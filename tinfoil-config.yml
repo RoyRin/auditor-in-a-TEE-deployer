@@ -17,5 +17,6 @@ shim:
     - /plan/*
     - /plan/*/sign
     - /plan/*/data
+    - /plan/*/data/*
     - /plan/*/run
     - /plan/*/results
